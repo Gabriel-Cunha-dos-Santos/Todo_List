@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Cunha">
+    <title>To-do List</title>
+
+    <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <button id="menu-btn">
+                <i class="fa fa-bars"></i>
+            </button>
+            <button id="profile-btn">
+                <img src="profileIcon.png" alt="Foto de Cunha">
+            </button>
+        </header>
+        <section id="infoAndAddTask">
+            <div class="info">
+                <h1>Minhas tarefas</h1>
+                <p id="profile-name">Cunha Perfil</p>
+            </div>
+            <div class="labelAndInput">
+                <label for="addTask">Adicionar Tarefa</label>
+                <div class="inputBox">
+                    <input
+                        type="text"
+                        name="addTask"
+                        id="inputNovaTarefa"
+                    >
+                    <button id="btnAddTarefa">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div id="setabaixo">
+        <i class="fa fa-arrow-down"></i>
+    </div>
+    <section class="conteudo">
+        <ul id="listaTarefas">
+        </ul>
+    </section>
+
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idTarefaEdicao">#1021</h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="inputTarefaNomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="btnAtualizarTarefa">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+    <script src="index.js"></script>
+</body>
+</html>
